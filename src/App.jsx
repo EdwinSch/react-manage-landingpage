@@ -1,9 +1,9 @@
-import Button from "./components/Button/Button";
+import Incentive from "./components/Incentive/Incentive";
 
 function App() {
   return (
     <main>
-      <h3>hello</h3>
+      <Incentive />
     </main>
   );
 }

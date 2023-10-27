@@ -1,0 +1,39 @@
+.incentive-container {
+  background-color: var(--primary);
+  background-image: url(../../assets/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 62px var(--paddingX);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & p {
+    width: 500px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.714px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .incentive-container {
+    background-image: url(../../assets/bg-simplify-section-mobile.svg);
+    background-size: auto;
+    background-position: left;
+    padding: 91px 32px;
+    flex-direction: column;
+    gap: 29px;
+
+    & p {
+      width: auto;
+
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: -1px;
+    }
+  }
+}

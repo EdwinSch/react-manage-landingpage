@@ -1,5 +1,6 @@
 /* Imports */
 @import "./components/Button/button.css";
+@import "./components/Incentive/incentive.css";
 
 /* Resets */
 *,
@@ -32,6 +33,7 @@ ul {
 
   --font: "Be Vietnam Pro", sans-serif;
   --inspect: solid red 1px;
+  --paddingX: 165px;
 }
 
 /* Main */
@@ -39,4 +41,10 @@ body {
   background: var(--bgClr);
   font-family: var(--font);
   color: var(--fontClr);
+}
+
+main {
+  border: var(--inspect);
+  max-width: 1440px;
+  margin: 0 auto;
 }
