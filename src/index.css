@@ -1,0 +1,38 @@
+/* Resets */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Variables */
+:root {
+  --primary: #f3603c;
+  --secondary: #1d1e25;
+  --bgClr: #fff;
+  --fontClr: #242d52;
+  --accent: #fff0ec;
+
+  --font: "Be Vietnam Pro", sans-serif;
+}
+
+/* Main */
+body {
+  background: var(--bgClr);
+  font-family: var(--font);
+  color: var(--fontClr);
+}
