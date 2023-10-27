@@ -1,0 +1,31 @@
+.btn {
+  width: 137px;
+  height: 44px;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font);
+  font-size: 0.813rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fcf6f5;
+  box-shadow: 0px 8px 10px -4px #ff9f8e;
+
+  &:hover {
+    background-color: #ff9f8e;
+  }
+}
+
+.btn-invert {
+  background-color: var(--bgClr);
+  color: var(--primary);
+
+  &:hover {
+    color: #f3603c;
+  }
+}
