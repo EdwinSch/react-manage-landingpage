@@ -1,0 +1,57 @@
+.about-container {
+  padding: 0 var(--paddingX);
+  display: flex;
+  justify-content: space-between;
+  margin: 146px 0;
+
+  .about-description {
+    & h2 {
+      margin-bottom: 24px;
+      width: 445px;
+      color: var(--fontClr);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: -0.714px;
+    }
+    & p {
+      width: 350px;
+    }
+  }
+
+  .summary-container {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+
+    .item-container {
+      display: flex;
+      gap: 28px;
+
+      .number {
+        min-width: 67px;
+        height: 39px;
+        border-radius: 39px;
+        display: grid;
+        place-items: center;
+        background-color: var(--primary);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: -0.286px;
+      }
+      .selling-point {
+        margin-top: 6px;
+
+        & h3 {
+          margin-bottom: 19px;
+          color: var(--fontClr);
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: -0.286px;
+        }
+      }
+    }
+  }
+}

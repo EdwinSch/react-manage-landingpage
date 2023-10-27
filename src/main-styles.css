@@ -1,6 +1,7 @@
 /* Imports */
 @import "./components/Button/button.css";
 @import "./components/Incentive/incentive.css";
+@import "./components/About/about.css";
 
 /* Resets */
 *,
@@ -29,8 +30,8 @@ ul {
   --secondary: #1d1e25;
   --bgClr: #fff;
   --fontClr: #242d52;
+  --fontLucent: rgba(36, 45, 82, 0.6);
   --accent: #fff0ec;
-
   --font: "Be Vietnam Pro", sans-serif;
   --inspect: solid red 1px;
   --paddingX: 165px;
@@ -47,4 +48,11 @@ main {
   border: var(--inspect);
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.body-text {
+  color: var(--fontLucent);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
 }
