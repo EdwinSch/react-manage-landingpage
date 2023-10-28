@@ -1,0 +1,48 @@
+nav {
+  padding: 0 var(--paddingX);
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 900px) {
+    padding: 0 20px;
+  }
+
+  .nav-links-wrapper {
+    display: flex;
+    gap: 32px;
+
+    & a {
+      color: var(--fontClr);
+      text-transform: capitalize;
+      color: #242d52;
+      font-size: 0.813rem;
+      font-weight: 500;
+      transition: 250ms ease;
+
+      &:hover {
+        color: rgba(36, 45, 82, 0.5);
+      }
+    }
+  }
+
+  .modal-btn {
+    display: none;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    .nav-links-wrapper {
+      display: none;
+    }
+    .btn-wrapper {
+      display: none;
+    }
+    .modal-btn {
+      display: block;
+    }
+  }
+}

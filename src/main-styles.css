@@ -1,7 +1,9 @@
 /* Imports */
+@import "./components/Navbar/navbar.css";
 @import "./components/Button/button.css";
 @import "./components/Incentive/incentive.css";
 @import "./components/About/about.css";
+@import "./components/Footer/footer.css";
 
 /* Resets */
 *,
@@ -42,6 +44,7 @@ body {
   background: var(--bgClr);
   font-family: var(--font);
   color: var(--fontClr);
+  min-height: 100vh;
 }
 
 main {
@@ -55,4 +58,8 @@ main {
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
+}
+
+.logo-wrapper {
+  margin-top: 5px;
 }

@@ -1,3 +1,11 @@
+export const navlinks = [
+  { id: 1, text: "pricing", link: "#" },
+  { id: 2, text: "product", link: "#" },
+  { id: 3, text: "about us", link: "#" },
+  { id: 4, text: "careers", link: "#" },
+  { id: 5, text: "community", link: "#" },
+];
+
 export const summary = [
   {
     id: 1,
