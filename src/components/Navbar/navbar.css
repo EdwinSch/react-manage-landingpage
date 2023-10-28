@@ -1,4 +1,4 @@
-nav {
+.desktop-navbar {
   padding: 0 var(--paddingX);
   margin: 70px 0;
   display: flex;
@@ -7,6 +7,7 @@ nav {
 
   @media only screen and (max-width: 900px) {
     padding: 0 20px;
+    margin: 45px 0;
   }
 
   .nav-links-wrapper {
@@ -20,8 +21,10 @@ nav {
       font-size: 0.813rem;
       font-weight: 500;
       transition: 250ms ease;
+      cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: rgba(36, 45, 82, 0.5);
       }
     }
@@ -29,9 +32,17 @@ nav {
 
   .modal-btn {
     display: none;
-    font-size: 30px;
+    font-size: 40px;
     background: transparent;
     border: none;
+    cursor: pointer;
+    transition: 250ms ease;
+    z-index: 2;
+
+    &:hover,
+    &:active {
+      color: var(--primary);
+    }
   }
 
   @media only screen and (max-width: 1030px) {

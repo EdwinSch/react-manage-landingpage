@@ -2,11 +2,12 @@ import VectorLogo from "../VectorLogo";
 import { navlinks } from "../../data";
 import Button from "../Button/Button";
 
-import { GiHamburgerMenu } from "react-icons/gi";
+// import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMenuSharp, IoCloseSharp } from "react-icons/io5";
 
-const Navbar = () => {
+const Navbar = ({ isModalOpen, setIsModalOpen }) => {
   return (
-    <nav>
+    <nav className="desktop-navbar">
       <VectorLogo color={"#242D52"} />
       <ul className="nav-links-wrapper">
         {navlinks.map((link) => {
@@ -20,8 +21,12 @@ const Navbar = () => {
       <div className="btn-wrapper">
         <Button variant={"btn-primary"} />
       </div>
-      <button className="modal-btn" type="button">
-        <GiHamburgerMenu />
+      <button
+        onClick={() => setIsModalOpen(!isModalOpen)}
+        className="modal-btn"
+        type="button"
+      >
+        {isModalOpen ? <IoCloseSharp /> : <IoMenuSharp />}
       </button>
     </nav>
   );

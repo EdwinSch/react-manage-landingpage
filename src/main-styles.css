@@ -1,4 +1,5 @@
 /* Imports */
+@import "./components/NavModal/navmodal.css";
 @import "./components/Navbar/navbar.css";
 @import "./components/Button/button.css";
 @import "./components/Incentive/incentive.css";
@@ -48,6 +49,7 @@ body {
 }
 
 main {
+  position: relative;
   border: var(--inspect);
   max-width: 1440px;
   margin: 0 auto;
