@@ -1,9 +1,20 @@
 .about-container {
   padding: 0 var(--paddingX);
+  margin: 146px 0;
   display: flex;
   justify-content: space-between;
-  margin: 146px 0;
+  gap: 40px;
 
+  @media only screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 0 20px;
+    margin: 90px 0 20px 0;
+  }
+
+  /* left/top */
   .about-description {
     & h2 {
       margin-bottom: 24px;
@@ -19,18 +30,46 @@
     }
   }
 
-  .summary-container {
-    width: 530px;
-    display: flex;
-    flex-direction: column;
-    gap: 46px;
+  @media only screen and (max-width: 1300px) {
+    .about-description {
+      & h2 {
+        margin-bottom: 13px;
+        width: auto;
+        text-align: center;
+      }
+      & p {
+        width: auto;
+        text-align: center;
+      }
+    }
+  }
 
-    .item-container {
+  @media only screen and (max-width: 900px) {
+    .about-description {
+      & h2 {
+        font-size: 1.875rem;
+        line-height: 45px;
+        letter-spacing: -0.619px;
+      }
+      & p {
+        font-weight: 300;
+        line-height: 28px;
+      }
+    }
+  }
+
+  /* right/bottom */
+  .single-item-wrapper {
+    max-width: 540px;
+    margin-bottom: 40px;
+
+    .item-header {
       display: flex;
+      align-items: center;
       gap: 28px;
 
-      .number {
-        min-width: 67px;
+      & p {
+        width: 67px;
         height: 39px;
         border-radius: 39px;
         display: grid;
@@ -41,16 +80,42 @@
         font-weight: 700;
         letter-spacing: -0.286px;
       }
-      .selling-point {
-        margin-top: 6px;
+      & h3 {
+        color: var(--fontClr);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: -0.286px;
+      }
+    }
 
-        & h3 {
-          margin-bottom: 19px;
-          color: var(--fontClr);
-          font-size: 1rem;
-          font-weight: 700;
-          letter-spacing: -0.286px;
-        }
+    .item-descr {
+      margin-left: 95px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .single-item-wrapper {
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .single-item-wrapper {
+      max-width: 100%;
+      /* margin-bottom: 50px; */
+
+      .item-header {
+        gap: 15px;
+        background-color: var(--accent);
+        border-top-left-radius: 39px;
+        border-bottom-left-radius: 39px;
+        margin-bottom: 8px;
+      }
+
+      .item-descr {
+        margin-left: 0;
+        font-size: 0.875rem;
+        line-height: 28px;
       }
     }
   }

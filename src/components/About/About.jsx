@@ -15,12 +15,12 @@ const About = () => {
       <article className="summary-container">
         {summary.map((item) => {
           return (
-            <div className="item-container" key={item.id}>
-              <div className="number">0{item.id}</div>
-              <div className="selling-point">
+            <div className="single-item-wrapper" key={item.id}>
+              <div className="item-header">
+                <p>0{item.id}</p>
                 <h3>{item.usp}</h3>
-                <p className="body-text">{item.description}</p>
               </div>
+              <p className="body-text item-descr">{item.description}</p>
             </div>
           );
         })}
