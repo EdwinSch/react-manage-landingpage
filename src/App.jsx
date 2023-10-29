@@ -5,16 +5,19 @@ import About from "./components/About/About";
 import Incentive from "./components/Incentive/Incentive";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
+import pattern from "./assets/bg-tablet-pattern.svg";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <main>
+      <img src={pattern} alt="pattern" className="ptrn-right" />
       {isModalOpen && <NavModal />}
       <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <Hero />
       <About />
+      <img src={pattern} alt="pattern" className="ptrn-left" />
       <Incentive />
       <Footer />
     </main>

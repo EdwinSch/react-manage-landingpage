@@ -1,6 +1,6 @@
 .about-container {
   padding: 0 var(--paddingX);
-  margin: 146px 0;
+  margin-top: 125px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -11,7 +11,7 @@
 
   @media only screen and (max-width: 900px) {
     padding: 0 20px;
-    margin: 90px 0 20px 0;
+    margin-top: 90px;
   }
 
   /* left/top */
@@ -102,7 +102,6 @@
   @media only screen and (max-width: 900px) {
     .single-item-wrapper {
       max-width: 100%;
-      /* margin-bottom: 50px; */
 
       .item-header {
         gap: 15px;

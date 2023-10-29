@@ -11,7 +11,7 @@
   .navmodal-container {
     background: var(--bgClr);
     margin: 0 var(--paddingX);
-    margin-top: 140px;
+    margin-top: 120px;
     padding: 40px 0;
     animation-name: fade;
     animation-duration: 350ms;
@@ -19,7 +19,7 @@
 
     @media only screen and (max-width: 900px) {
       margin: 0 20px;
-      margin-top: 120px;
+      margin-top: 110px;
     }
 
     & ul {

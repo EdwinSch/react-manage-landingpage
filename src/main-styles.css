@@ -54,6 +54,20 @@ main {
   border: var(--inspect);
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
+
+  .ptrn-right {
+    position: absolute;
+    top: -160px;
+    right: -150px;
+    z-index: -1;
+  }
+  .ptrn-left {
+    position: absolute;
+    top: 1100px;
+    left: -450px;
+    z-index: -1;
+  }
 }
 
 .body-text {
