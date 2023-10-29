@@ -13,6 +13,9 @@
     margin: 0 var(--paddingX);
     margin-top: 140px;
     padding: 40px 0;
+    animation-name: fade;
+    animation-duration: 350ms;
+    animation-timing-function: ease;
 
     @media only screen and (max-width: 900px) {
       margin: 0 20px;
@@ -38,5 +41,15 @@
         }
       }
     }
+  }
+}
+
+/* Fade In modal */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
