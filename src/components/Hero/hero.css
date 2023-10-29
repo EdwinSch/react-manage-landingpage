@@ -1,0 +1,52 @@
+.hero-container {
+  padding: 0 var(--paddingX);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media only screen and (max-width: 1300px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & h1 {
+      margin-top: 50px;
+      color: var(--fontClr);
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: -1px;
+    }
+
+    & p {
+      width: 350px;
+    }
+  }
+
+  & img {
+    width: 540px;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .hero-text {
+      align-items: center;
+      gap: 0;
+      text-align: center;
+
+      & h1 {
+        margin-top: 0;
+      }
+
+      & p {
+        width: auto;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import NavModal from "./components/NavModal/NavModal";
 import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Incentive from "./components/Incentive/Incentive";
 import Footer from "./components/Footer/Footer";
@@ -12,6 +13,7 @@ function App() {
     <main>
       {isModalOpen && <NavModal />}
       <Navbar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Hero />
       <About />
       <Incentive />
       <Footer />
