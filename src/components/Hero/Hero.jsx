@@ -12,7 +12,9 @@ const Hero = () => {
         </p>
         <Button variant={"btn-primary"} />
       </article>
-      <img src={Illustration} alt="graph illustration" />
+      <figure className="img-wrapper">
+        <img src={Illustration} alt="graph illustration" />
+      </figure>
     </section>
   );
 };
