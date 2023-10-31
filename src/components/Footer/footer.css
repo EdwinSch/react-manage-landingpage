@@ -1,0 +1,23 @@
+footer {
+  padding: 62px var(--paddingX);
+  background-color: var(--secondary);
+
+  .logo-icons-container {
+    /* break */
+    .icons-wrapper {
+      display: flex;
+      gap: 12px;
+
+      & a {
+        color: white;
+        font-size: 21px;
+        transition: 250ms ease;
+
+        &:hover,
+        &:active {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

@@ -2,15 +2,19 @@ import VectorLogo from "../VectorLogo";
 import { navlinks } from "../../data";
 import Button from "../Button/Button";
 
-// import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5";
 
 const Navbar = ({ isModalOpen, setIsModalOpen }) => {
+  // Filter correct navlinks
+  const newNavlinks = navlinks.filter((link) => {
+    return link.mainNav === true;
+  });
+
   return (
     <nav className="desktop-navbar">
       <VectorLogo color={"#242D52"} />
       <ul className="nav-links-wrapper">
-        {navlinks.map((link) => {
+        {newNavlinks.map((link) => {
           return (
             <li key={link.id}>
               <a href={link.link}>{link.text}</a>

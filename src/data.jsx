@@ -1,9 +1,19 @@
+import {
+  FaSquareFacebook,
+  FaSquareYoutube,
+  FaXTwitter,
+  FaPinterest,
+  FaInstagram,
+} from "react-icons/fa6";
+
 export const navlinks = [
-  { id: 1, text: "pricing", link: "#" },
-  { id: 2, text: "product", link: "#" },
-  { id: 3, text: "about us", link: "#" },
-  { id: 4, text: "careers", link: "#" },
-  { id: 5, text: "community", link: "#" },
+  { id: 1, text: "home", link: "#", mainNav: false },
+  { id: 2, text: "pricing", link: "#", mainNav: true },
+  { id: 3, text: "product", link: "#", mainNav: true },
+  { id: 4, text: "about us", link: "#", mainNav: true },
+  { id: 5, text: "careers", link: "#", mainNav: true },
+  { id: 6, text: "community", link: "#", mainNav: true },
+  { id: 7, text: "privacy policy", link: "#", mainNav: false },
 ];
 
 export const summary = [
@@ -47,5 +57,33 @@ export const testimonials = [
     id: 4,
     name: "Shanai Gough",
     text: "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    url: "https://www.facebook.com",
+    icon: <FaSquareFacebook />,
+  },
+  {
+    id: 2,
+    url: "https://www.youtube.com",
+    icon: <FaSquareYoutube />,
+  },
+  {
+    id: 3,
+    url: "https://www.x.com",
+    icon: <FaXTwitter />,
+  },
+  {
+    id: 4,
+    url: "https://www.pinterest.com",
+    icon: <FaPinterest />,
+  },
+  {
+    id: 5,
+    url: "https://www.instagram.com",
+    icon: <FaInstagram />,
   },
 ];

@@ -51,7 +51,7 @@ body {
 
 main {
   position: relative;
-  border: var(--inspect);
+  /* border: var(--inspect); */
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
