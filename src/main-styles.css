@@ -6,6 +6,7 @@
 @import "./components/Incentive/incentive.css";
 @import "./components/About/about.css";
 @import "./components/Footer/footer.css";
+@import "./components/Input/input.css";
 
 /* Resets */
 *,

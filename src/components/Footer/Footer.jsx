@@ -1,5 +1,6 @@
 import VectorLogo from "../VectorLogo";
 import { socials, navlinks } from "../../data";
+import Input from "../Input/Input";
 
 const Footer = () => {
   // Filter links for column 1
@@ -41,7 +42,10 @@ const Footer = () => {
           })}
         </ul>
       </div>
-      <div className="input-container"></div>
+      <div className="input-container">
+        <Input />
+        <p>Copyright 2023. All Rights Reserved</p>
+      </div>
     </footer>
   );
 };

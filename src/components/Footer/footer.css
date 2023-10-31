@@ -2,16 +2,21 @@ footer {
   padding: 62px var(--paddingX);
   background-color: var(--secondary);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .logo-icons-container {
-    /* break */
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
     .icons-wrapper {
       display: flex;
       gap: 12px;
 
       & a {
         color: white;
-        font-size: 21px;
+        font-size: 22px;
         transition: 250ms ease;
 
         &:hover,
@@ -24,6 +29,9 @@ footer {
 
   .footer-links-container {
     display: flex;
+    justify-content: space-between;
+    width: 380px;
+    /* border: var(--inspect); */
 
     .link-col-1,
     .link-col-2 {
@@ -44,6 +52,21 @@ footer {
           color: var(--primary);
         }
       }
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+
+    & p {
+      color: rgba(255, 255, 255, 0.5);
+      text-align: right;
+      font-size: 0.813rem;
+      font-weight: 400;
+      letter-spacing: -0.203px;
     }
   }
 }
