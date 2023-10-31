@@ -7,13 +7,13 @@ import {
 } from "react-icons/fa6";
 
 export const navlinks = [
-  { id: 1, text: "home", link: "#", mainNav: false },
-  { id: 2, text: "pricing", link: "#", mainNav: true },
-  { id: 3, text: "product", link: "#", mainNav: true },
-  { id: 4, text: "about us", link: "#", mainNav: true },
-  { id: 5, text: "careers", link: "#", mainNav: true },
-  { id: 6, text: "community", link: "#", mainNav: true },
-  { id: 7, text: "privacy policy", link: "#", mainNav: false },
+  { id: 1, text: "home", link: "#" },
+  { id: 2, text: "pricing", link: "#" },
+  { id: 3, text: "product", link: "#" },
+  { id: 4, text: "about us", link: "#" },
+  { id: 5, text: "careers", link: "#" },
+  { id: 6, text: "community", link: "#" },
+  { id: 7, text: "privacy policy", link: "#" },
 ];
 
 export const summary = [

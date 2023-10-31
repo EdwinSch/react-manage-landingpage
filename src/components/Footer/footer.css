@@ -1,6 +1,7 @@
 footer {
   padding: 62px var(--paddingX);
   background-color: var(--secondary);
+  display: flex;
 
   .logo-icons-container {
     /* break */
@@ -11,6 +12,31 @@ footer {
       & a {
         color: white;
         font-size: 21px;
+        transition: 250ms ease;
+
+        &:hover,
+        &:active {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .footer-links-container {
+    display: flex;
+
+    .link-col-1,
+    .link-col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      & a {
+        font-size: 0.938rem;
+        font-weight: 400;
+        letter-spacing: -0.234px;
+        color: white;
+        text-transform: capitalize;
         transition: 250ms ease;
 
         &:hover,

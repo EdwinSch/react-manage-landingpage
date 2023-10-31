@@ -5,10 +5,9 @@ import Button from "../Button/Button";
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5";
 
 const Navbar = ({ isModalOpen, setIsModalOpen }) => {
-  // Filter correct navlinks
-  const newNavlinks = navlinks.filter((link) => {
-    return link.mainNav === true;
-  });
+  // Filter selected navlinks
+  const filterKeys = [1, 7];
+  const newNavlinks = navlinks.filter((link) => !filterKeys.includes(link.id));
 
   return (
     <nav className="desktop-navbar">
