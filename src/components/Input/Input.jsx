@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Input = () => {
   const [input, setInput] = useState("");
+  const [validation, setValidation] = useState(true);
 
   const handleChange = (event) => {
     setInput(event.target.value);
@@ -9,15 +10,22 @@ const Input = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setInput(input);
+
+    if (!input.includes("@")) {
+      console.log("invalid");
+      setValidation(false);
+      return;
+    }
+
+    setInput("");
+    setValidation(true);
     console.log(input);
   };
 
   return (
     <form onSubmit={handleSubmit} noValidate>
       <input
-        // className={validate ? "valid" : "valid invalid"}
-        className="input-field"
+        className={validation ? "input-field" : "input-field invalid"}
         type="email"
         value={input}
         name="email"
@@ -28,6 +36,7 @@ const Input = () => {
       <button type="submit" className="btn btn-submit">
         go
       </button>
+      {validation || <p className="error-msg">Please insert a valid email</p>}
     </form>
   );
 };
