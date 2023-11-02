@@ -17,6 +17,18 @@ form {
       font-size: 0.813rem;
       letter-spacing: -0.1px;
     }
+
+    @media only screen and (max-width: 1300px) {
+      width: 240px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      width: 150px;
+
+      &::placeholder {
+        font-size: 0.688rem;
+      }
+    }
   }
 
   .invalid {
@@ -33,6 +45,10 @@ form {
     &:hover,
     &:active {
       background-color: #f98f75;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      width: 80px;
     }
   }
 
