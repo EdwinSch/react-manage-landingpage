@@ -3,6 +3,7 @@
 @import "./components/Navbar/navbar.css";
 @import "./components/Hero/hero.css";
 @import "./components/Button/button.css";
+@import "./components/Slider/slider.css";
 @import "./components/Incentive/incentive.css";
 @import "./components/About/about.css";
 @import "./components/Footer/footer.css";

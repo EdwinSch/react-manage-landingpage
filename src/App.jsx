@@ -2,6 +2,7 @@ import NavModal from "./components/NavModal/NavModal";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
+import Slider from "./components/Slider/slider";
 import Incentive from "./components/Incentive/Incentive";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <About />
       <img src={pattern} alt="pattern" className="ptrn-left" />
+      <Slider />
       <Incentive />
       <Footer />
     </main>

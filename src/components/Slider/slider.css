@@ -1,0 +1,5 @@
+.slider-container {
+  padding: 0 var(--paddingX);
+  margin-top: 105px;
+  border: var(--inspect);
+}
