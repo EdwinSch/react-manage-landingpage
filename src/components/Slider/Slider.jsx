@@ -39,6 +39,8 @@ const Slider = () => {
               key={id}
               style={{
                 transform: `translateX(${100 * (index - currentPerson)}%)`,
+                opacity: index === currentPerson ? 1 : 0,
+                visibility: index === currentPerson ? "visible" : "hidden",
               }}
             >
               <div className="slide-content">
