@@ -53,7 +53,6 @@ body {
 
 main {
   position: relative;
-  /* border: var(--inspect); */
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
@@ -63,12 +62,27 @@ main {
     top: -160px;
     right: -150px;
     z-index: -1;
+
+    @media only screen and (max-width: 900px) {
+      top: -300px;
+      right: -220px;
+    }
+    @media only screen and (max-width: 500px) {
+      top: -400px;
+      right: 0;
+      left: 60px;
+    }
   }
+
   .ptrn-left {
     position: absolute;
     top: 1100px;
     left: -450px;
     z-index: -1;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 }
 

@@ -31,10 +31,15 @@
 
     & p {
       width: auto;
+      font-weight: 600;
 
       text-align: center;
       line-height: 50px;
       letter-spacing: -1px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 40px;
     }
   }
 }

@@ -15,7 +15,6 @@ const Slider = () => {
   };
 
   // Auto play
-
   useEffect(() => {
     let sliderId = setInterval(() => {
       nextSlide();
@@ -44,7 +43,9 @@ const Slider = () => {
               }}
             >
               <div className="slide-content">
-                <img src={image} alt="avatar" className="avatar" />
+                <figure>
+                  <img src={image} alt="avatar" className="avatar" />
+                </figure>
                 <p className="name">{name}</p>
                 <p className="body-text">"{quote}"</p>
               </div>
