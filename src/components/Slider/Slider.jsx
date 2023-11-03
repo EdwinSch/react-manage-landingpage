@@ -1,20 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { testimonials } from "../../data";
 import Button from "../Button/Button";
-
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const Slider = () => {
   const [people, setPeople] = useState(testimonials);
   const [currentPerson, setCurrentPerson] = useState(0);
-
-  const prevSlide = () => {
-    if (currentPerson === 0) {
-      setCurrentPerson(people.length - 1);
-      return;
-    }
-    setCurrentPerson(currentPerson - 1);
-  };
 
   const nextSlide = () => {
     if (currentPerson === people.length - 1) {
@@ -24,22 +14,20 @@ const Slider = () => {
     setCurrentPerson(currentPerson + 1);
   };
 
+  // Auto play
+
+  useEffect(() => {
+    let sliderId = setInterval(() => {
+      nextSlide();
+    }, 6000);
+    return () => {
+      clearInterval(sliderId);
+    };
+  }, [currentPerson]);
+
   return (
     <section className="slider-container">
       <h4>What they've said</h4>
-
-      {/* TEMP --- */}
-      <div className="btns">
-        <button onClick={prevSlide} className="btn-chevron" type="button">
-          <FaChevronLeft />
-        </button>
-        <button onClick={nextSlide} className="btn-chevron" type="button">
-          <FaChevronRight />
-        </button>
-      </div>
-
-      {/* --- TEMP */}
-
       <div className="carrousel-wrapper">
         {people.map((person, index) => {
           //destructure
@@ -53,9 +41,11 @@ const Slider = () => {
                 transform: `translateX(${100 * (index - currentPerson)}%)`,
               }}
             >
-              {/* <img src={image} alt="avatar" className="avatar" /> */}
-              <p className="name">{name}</p>
-              <p className="body-text">{quote}</p>
+              <div className="slide-content">
+                <img src={image} alt="avatar" className="avatar" />
+                <p className="name">{name}</p>
+                <p className="body-text">"{quote}"</p>
+              </div>
             </article>
           );
         })}
