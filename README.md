@@ -5,7 +5,7 @@ Showcasing: a custom made slider/carrousel, data mapping, state handling, respon
 
 ### Live Demo
 
-🚀 [Deployed App](https://extraordinary-pegasus-23f3ca.netlify.app/)
+🚀 [Deployed App](https://main--magical-stardust-a57ed5.netlify.app/)
 
 #### 🛠️ Build with
 
