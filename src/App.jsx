@@ -5,11 +5,25 @@ import About from "./components/About/About";
 import Slider from "./components/Slider/slider";
 import Incentive from "./components/Incentive/Incentive";
 import Footer from "./components/Footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import pattern from "./assets/bg-tablet-pattern.svg";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Close modal nav if window != mobile
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.screen.width > 1030) {
+        setIsModalOpen(false);
+        return;
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <main>
