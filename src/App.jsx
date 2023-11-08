@@ -2,7 +2,7 @@ import NavModal from "./components/NavModal/NavModal";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-import Slider from "./components/Slider/slider";
+import Slider from "./components/Slider/Slider";
 import Incentive from "./components/Incentive/Incentive";
 import Footer from "./components/Footer/Footer";
 import { useState, useEffect } from "react";
